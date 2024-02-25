@@ -34,8 +34,8 @@ body {
 
 .container {
         width: 1158px;
-        padding: left 16px;
-        padding-right:16px;
+        padding: left 15px;
+        padding-right:15px;
         margin-left: auto;
         margin-right: auto;
 }
@@ -71,7 +71,7 @@ body {
 }
 .menu {
         display: flex;
-        column-gap: 40px;
+        gap: 40px;
 }
 .nav-link {
         font-weight: 500;
@@ -109,7 +109,7 @@ color: #404bbf
 }
 .address-list {
         display: flex;
-        column-gap: 40px;
+        gap: 40px;
 
 
 }
@@ -196,6 +196,7 @@ color: #404bbf
         width: calc((100% - 72px) / 4);
  }
 .h-benefits-list-item {
+        margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -205,7 +206,6 @@ color: #404bbf
 }
   
 .text-benefits-list-item {
-        margin-top: 8px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -243,11 +243,12 @@ background: #ffffff;
         text-transform: capitalize;
         text-align: center;
         color: #2e2f42;
-        padding: 72px;
+        margin-bottom: 72px;
 }
 .team-info {
        text-align: center;  
-       padding: 32px 16px 32px 16px;
+       padding-top: 32px;
+       margin-bottom: 32px;
 }
 
 .name-our-team-list-item{
@@ -282,13 +283,15 @@ background-color: #F4F4FD
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 48px;
+        margin-bottom: 0;
 }
 .our-portfolio-list-item {
-
+ width: calc(( 100% - 48px) / 3);
 }
 
 .h-our-portfolio {
-        padding-bottom: 72px;
+        margin-bottom: 72px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -305,7 +308,7 @@ background-color: #F4F4FD
 }
 
 .name-our-portfolio-list-item {
-        width: calc(( 100% - 48px) / 3);
+       
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -325,12 +328,25 @@ background-color: #F4F4FD
 
 .footer {
          background: #2e2f42;
+         padding-top: 100px ;
+         padding-bottom: 100px;
+}
+
+.logo-footer {
+        font-family: "Raleway", sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 1.17;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
 
 }
-.logo-part-footer {
-        display: inline-block;
-        padding-top: 100px;
-        margin-bottom: 16px;
+
+
+.logo-part-footer {     
         color: #f4f4fd;
 }
 .text-footer{ 
@@ -340,7 +356,5 @@ background-color: #F4F4FD
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        padding-bottom: 100px;
-
        
 }
